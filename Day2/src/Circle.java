@@ -1,0 +1,22 @@
+
+public class Circle {
+	private double radius;
+	private String color;
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public Circle() {
+	}
+
+	public Circle(double radius, String color) {
+
+		this.radius = radius;
+		this.color = color;
+	}
+}
