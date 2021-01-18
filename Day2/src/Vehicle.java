@@ -17,6 +17,7 @@ public class Vehicle {
 				.append("\nModel: ").append(model).append("\nNo. of wheel: ").append(noOfwheels)
 				.append("\nNo of Passenger: ").append(noOfPassangers));
 	}
+
 	
 }
 
