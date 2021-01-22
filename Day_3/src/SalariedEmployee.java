@@ -17,4 +17,9 @@ public class SalariedEmployee extends Employee {
 	public void set_salary(double salary) {
 		this.weekly_salary = salary;
 	}
+
+	@Override
+	public double getPayment() {
+		return get_salary();
+	}
 }

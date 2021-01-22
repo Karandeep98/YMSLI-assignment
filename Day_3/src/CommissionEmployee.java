@@ -11,11 +11,21 @@ public class CommissionEmployee extends Employee {
 
 	@Override
 	public void set_salary(double percent) {
-		this.commission_percent=percent;
+		this.commission_percent = percent;
 	}
 
 	@Override
 	public double get_salary() {
-		return (weekly_sales*commission_percent/100);
+		return (weekly_sales * commission_percent / 100);
+	}
+
+	@Override
+	public String toString() {
+		return "CommissionEmployee [weekly_sales=" + weekly_sales + ", commission_percent=" + commission_percent + "]";
+	}
+
+	@Override
+	public double getPayment() {
+		return get_salary();
 	}
 }

@@ -19,4 +19,10 @@ public class HourlyEmployee extends Employee{
 	public double get_salary() {
 		return (hourly_rate*hours_worked_per_week);
 	}
+
+	@Override
+	public double getPayment() {
+		
+		return get_salary();
+	}
 }
