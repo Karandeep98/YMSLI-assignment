@@ -9,23 +9,13 @@ public class CommissionEmployee extends Employee {
 		this.commission_percent = commission_percent;
 	}
 
+	@Override
+	public void set_salary(double percent) {
+		this.commission_percent=percent;
+	}
+
+	@Override
 	public double get_salary() {
-		return (weekly_sales * commission_percent / 100);
-	}
-
-	public int getWeekly_sales() {
-		return weekly_sales;
-	}
-
-	public void setWeekly_sales(int weekly_sales) {
-		this.weekly_sales = weekly_sales;
-	}
-
-	public double getCommission_percent() {
-		return commission_percent;
-	}
-
-	public void setCommission_percent(double commission_percent) {
-		this.commission_percent = commission_percent;
+		return (weekly_sales*commission_percent/100);
 	}
 }

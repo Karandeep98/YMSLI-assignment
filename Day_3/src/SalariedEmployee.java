@@ -8,11 +8,13 @@ public class SalariedEmployee extends Employee {
 
 	}
 
-	public double getWeekly_salary() {
+	@Override
+	public double get_salary() {
 		return weekly_salary;
 	}
 
-	public void setWeekly_salary(double weekly_salary) {
-		this.weekly_salary = weekly_salary;
+	@Override
+	public void set_salary(double salary) {
+		this.weekly_salary = salary;
 	}
 }
